@@ -1,3 +1,10 @@
+function clearFields() {
+  document.getElementById("monthlySalary").value = "";
+  document.getElementById("hoursWorked").value = "";
+  document.getElementById("weekendHours").value = "";
+  document.getElementById("overtimePay").innerText = "";
+}
+
 function calculateOvertime() {
     var monthlySalary = parseFloat(
       document.getElementById("monthlySalary").value
